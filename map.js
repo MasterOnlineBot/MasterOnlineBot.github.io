@@ -19,7 +19,7 @@ async function main() {
             
   const el = document.createElement('img');
   el.className = 'my-marker';
-  el.src = 'images.png';
+  el.src = '70.png';
   el.onclick = () => map.update({location: {...LOCATION, duration: 200}});
   map.addChild(new YMapMarker({coordinates: LOCATION.center}, el));
   map.setBehaviors(['drag','pinchZoom']);
