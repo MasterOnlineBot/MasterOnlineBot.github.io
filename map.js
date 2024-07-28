@@ -1,12 +1,11 @@
 const LOCATION = {center: [37.623082, 55.752540], zoom: 14};
-
 const LOCATION1 = {center: [37.588144, 55.733842], zoom: 14};
-
 const LOCATION2 = {center: [37.627377, 55.757288], zoom: 14};
-
 const LOCATION3 = {center: [37.620811, 55.752363], zoom: 14};
-
 const LOCATION4 = {center: [37.613283, 55.751355], zoom: 14};
+const LOCATION5 = {center: [37.620528, 55.755304], zoom: 14};
+const LOCATION6 = {center: [37.612904, 55.754077], zoom: 14};
+const LOCATION7 = {center: [37.604850, 55.756473], zoom: 14};
 
 
 
@@ -32,23 +31,6 @@ async function main() {
   map.addChild(new YMapDefaultFeaturesLayer());
     
 
-  const markerElement = document.createElement('div');
-  markerElement.className = 'marker-class';
-  markerElement.innerText = "I'm marker!";
-
-  const marker = new YMapMarker(
-    {
-        source: '70.png',
-        coordinates: [36.588144, 54.733842],
-        draggable: true,
-        mapFollowsOnDrag: true
-    },
-    markerElement);
-
-
-
-
-            
     const el = document.createElement('img');
     el.className = 'my-marker';
     el.src = '70.png';
@@ -86,6 +68,26 @@ async function main() {
  el4.onclick = () => map.update({location: {...LOCATION4, duration: 200}});
  map.addChild(new YMapMarker({coordinates: LOCATION4.center}, el4));
 
+
+ const el5 = document.createElement('img');
+ el5.className = 'my-marker1';
+ el5.src = '70.png';
+ el5.onclick = () => map.update({location: {...LOCATION5, duration: 200}});
+ map.addChild(new YMapMarker({coordinates: LOCATION5.center}, el5));
+
+
+ const el6 = document.createElement('img');
+ el6.className = 'my-marker1';
+ el6.src = '70.png';
+ el6.onclick = () => map.update({location: {...LOCATION6, duration: 200}});
+ map.addChild(new YMapMarker({coordinates: LOCATION6.center}, el6));
+
+
+ const el7 = document.createElement('img');
+ el7.className = 'my-marker1';
+ el7.src = '70.png';
+ el7.onclick = () => map.update({location: {...LOCATION7, duration: 200}});
+ map.addChild(new YMapMarker({coordinates: LOCATION7.center}, el7));
 
 
 
