@@ -1,18 +1,18 @@
-const LOCATION = {center: [37.623082, 55.752540], zoom: 14};
-const LOCATION1 = {center: [37.588144, 55.733842], zoom: 14};
-const LOCATION2 = {center: [37.627377, 55.757288], zoom: 14};
-const LOCATION3 = {center: [37.620811, 55.752363], zoom: 14};
-const LOCATION4 = {center: [37.613283, 55.751355], zoom: 14};
-const LOCATION5 = {center: [37.620528, 55.755304], zoom: 14};
-const LOCATION6 = {center: [37.612904, 55.754077], zoom: 14};
-const LOCATION7 = {center: [37.604850, 55.756473], zoom: 14};
-const LOCATION8 = {center: [37.625410, 55.753759], zoom: 14};
-const LOCATION9 = {center: [37.625430, 55.748437], zoom: 14};
-const LOCATION10 = {center: [37.631302, 55.751636], zoom: 14};
-const LOCATION11 = {center: [37.606286, 55.751470], zoom: 14};
-const LOCATION12 = {center: [37.637174, 55.752431], zoom: 14};
-const LOCATION13 = {center: [37.638409, 55.754403], zoom: 14};
-const LOCATION14 = {center: [37.619855, 55.757852], zoom: 14};
+const LOCATION = {center: [37.623082, 55.752540], zoom: 15};
+const LOCATION1 = {center: [37.588144, 55.733842], zoom: 15};
+const LOCATION2 = {center: [37.627377, 55.757288], zoom: 15};
+const LOCATION3 = {center: [37.620811, 55.752363], zoom: 15};
+const LOCATION4 = {center: [37.613283, 55.751355], zoom: 15};
+const LOCATION5 = {center: [37.620528, 55.755304], zoom: 15};
+const LOCATION6 = {center: [37.612904, 55.754077], zoom: 15};
+const LOCATION7 = {center: [37.604850, 55.756473], zoom: 15};
+const LOCATION8 = {center: [37.625410, 55.753759], zoom: 15};
+const LOCATION9 = {center: [37.625430, 55.748437], zoom: 15};
+const LOCATION10 = {center: [37.631302, 55.751636], zoom: 15};
+const LOCATION11 = {center: [37.606286, 55.751470], zoom: 15};
+const LOCATION12 = {center: [37.637174, 55.752431], zoom: 15};
+const LOCATION13 = {center: [37.638409, 55.754403], zoom: 15};
+const LOCATION14 = {center: [37.619855, 55.757852], zoom: 15};
 
 
  
@@ -31,7 +31,7 @@ async function main() {
  // const {YMapZoomControl} = await ymaps3.import('@yandex/ymaps3-controls@0.0.1');
     
   map = new YMap(document.getElementById('map'), {
-    location: {center: [37.623082, 55.752540], zoom: 15},
+    location: {center: [37.623082, 55.752540], zoom: 16},
    // behaviors: ['drag', 'pinchZoom', 'mouseTilt','scrollZoom']
   });
     
