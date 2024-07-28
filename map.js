@@ -29,6 +29,20 @@ async function main() {
     
   map.addChild((scheme = new YMapDefaultSchemeLayer()));
   map.addChild(new YMapDefaultFeaturesLayer());
+
+  const markerElement = document.createElement('div');
+  markerElement.className = 'marker-class';
+  markerElement.innerText = "I'm marker!";
+
+  const marker = new YMapMarker(
+    {
+        source: '70.png',
+        coordinates: [36.588144, 54.733842],
+        draggable: true,
+        mapFollowsOnDrag: true
+    },
+    markerElement);
+
     
 
     const el = document.createElement('img');
