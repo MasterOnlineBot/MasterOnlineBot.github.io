@@ -1,18 +1,20 @@
-const LOCATION = {center: [37.623082, 55.752540], zoom: 13};
-const LOCATION1 = {center: [37.588144, 55.733842], zoom: 13};
-const LOCATION2 = {center: [37.627377, 55.757288], zoom: 13};
-const LOCATION3 = {center: [37.620811, 55.752363], zoom: 13};
-const LOCATION4 = {center: [37.613283, 55.751355], zoom: 13};
-const LOCATION5 = {center: [37.620528, 55.755304], zoom: 13};
-const LOCATION6 = {center: [37.612904, 55.754077], zoom: 13};
-const LOCATION7 = {center: [37.604850, 55.756473], zoom: 13};
-const LOCATION8 = {center: [37.625410, 55.753759], zoom: 13};
-const LOCATION9 = {center: [37.625430, 55.748437], zoom: 13};
-const LOCATION10 = {center: [37.631302, 55.751636], zoom: 13};
-const LOCATION11 = {center: [37.606286, 55.751470], zoom: 13};
-const LOCATION12 = {center: [37.637174, 55.752431], zoom: 13};
-const LOCATION13 = {center: [37.638409, 55.754403], zoom: 13};
-const LOCATION14 = {center: [37.619855, 55.757852], zoom: 13};
+const LOCATION = {center: [37.623082, 55.752540], zoom: 14};
+const LOCATION1 = {center: [37.588144, 55.733842], zoom: 14};
+const LOCATION2 = {center: [37.627377, 55.757288], zoom: 14};
+const LOCATION3 = {center: [37.620811, 55.752363], zoom: 14};
+const LOCATION4 = {center: [37.613283, 55.751355], zoom: 14};
+const LOCATION5 = {center: [37.620528, 55.755304], zoom: 14};
+const LOCATION6 = {center: [37.612904, 55.754077], zoom: 14};
+const LOCATION7 = {center: [37.604850, 55.756473], zoom: 14};
+const LOCATION8 = {center: [37.625410, 55.753759], zoom: 14};
+const LOCATION9 = {center: [37.625430, 55.748437], zoom: 14};
+const LOCATION10 = {center: [37.631302, 55.751636], zoom: 14};
+const LOCATION11 = {center: [37.606286, 55.751470], zoom: 14};
+const LOCATION12 = {center: [37.637174, 55.752431], zoom: 14};
+const LOCATION13 = {center: [37.638409, 55.754403], zoom: 14};
+const LOCATION14 = {center: [37.619855, 55.757852], zoom: 14};
+
+
  
 window.map = null;
     
@@ -20,7 +22,11 @@ main();
 
 async function main() {
         await ymaps3.ready;
-        const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker} = ymaps3;
+        const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapControls, YMapMarker} = ymaps3;
+
+        const {
+          YMapGeolocationControl
+        } = await ymaps3.import('@yandex/ymaps3-controls@0.0.1');
     
  // const {YMapZoomControl} = await ymaps3.import('@yandex/ymaps3-controls@0.0.1');
     
@@ -31,6 +37,11 @@ async function main() {
     
   map.addChild((scheme = new YMapDefaultSchemeLayer()));
   map.addChild(new YMapDefaultFeaturesLayer());
+
+
+  map.addChild(new YMapControls({position: 'top left'})
+  .addChild(new YMapGeolocationControl({}))
+);
     
 
   const markerElement = document.createElement('div');
@@ -52,7 +63,7 @@ async function main() {
 
 
     const el1 = document.createElement('img');
-    el1.className = 'my-marker1';
+    el1.className = 'my-marker';
     el1.src = '70.png';
     el1.onclick = () => map.update({location: {...LOCATION1, duration: 200}});
     map.addChild(new YMapMarker({coordinates: LOCATION1.center}, el1));
@@ -60,7 +71,7 @@ async function main() {
 
 
    const el2 = document.createElement('img');
-   el2.className = 'my-marker1';
+   el2.className = 'my-marker';
    el2.src = '70.png';
    el2.onclick = () => map.update({location: {...LOCATION2, duration: 200}});
    map.addChild(new YMapMarker({coordinates: LOCATION2.center}, el2));
@@ -68,21 +79,21 @@ async function main() {
 
 
   const el3 = document.createElement('img');
-  el3.className = 'my-marker1';
+  el3.className = 'my-marker';
   el3.src = '70.png';
   el3.onclick = () => map.update({location: {...LOCATION3, duration: 200}});
   map.addChild(new YMapMarker({coordinates: LOCATION3.center}, el3));
  // map.setBehaviors(['drag','pinchZoom']);
 
  const el4 = document.createElement('img');
- el4.className = 'my-marker1';
+ el4.className = 'my-marker';
  el4.src = '70.png';
  el4.onclick = () => map.update({location: {...LOCATION4, duration: 200}});
  map.addChild(new YMapMarker({coordinates: LOCATION4.center}, el4));
 
 
  const el5 = document.createElement('img');
- el5.className = 'my-marker1';
+ el5.className = 'my-marker';
  el5.src = '70.png';
  el5.onclick = () => map.update({location: {...LOCATION5, duration: 200}});
  map.addChild(new YMapMarker({coordinates: LOCATION5.center}, el5));
