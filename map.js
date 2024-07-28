@@ -1,28 +1,92 @@
 const LOCATION = {center: [37.623082, 55.752540], zoom: 14};
 
+const LOCATION1 = {center: [37.588144, 55.733842], zoom: 14};
+
+const LOCATION2 = {center: [37.627377, 55.757288], zoom: 14};
+
+const LOCATION3 = {center: [37.620811, 55.752363], zoom: 14};
+
+const LOCATION4 = {center: [37.613283, 55.751355], zoom: 14};
+
+
+
+
+
+
 window.map = null;
     
 main();
 
 async function main() {
-  await ymaps3.ready;
-  const {YMap, YMapDefaultSchemeLayer, YMapControls, YMapDefaultFeaturesLayer, YMapMarker} = ymaps3;
+        await ymaps3.ready;
+        const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker} = ymaps3;
     
-  const {YMapZoomControl} = await ymaps3.import('@yandex/ymaps3-controls@0.0.1');
+ // const {YMapZoomControl} = await ymaps3.import('@yandex/ymaps3-controls@0.0.1');
     
-  map = new YMap(document.getElementById('map'), {location: LOCATION});
+  map = new YMap(document.getElementById('map'), {
+    location: {center: [37.623082, 55.752540], zoom: 15},
+   // behaviors: ['drag', 'pinchZoom', 'mouseTilt','scrollZoom']
+  });
     
   map.addChild((scheme = new YMapDefaultSchemeLayer()));
   map.addChild(new YMapDefaultFeaturesLayer());
     
-  map.addChild(new YMapControls({position: 'right'}).addChild(new YMapZoomControl({})));
+
+  const markerElement = document.createElement('div');
+  markerElement.className = 'marker-class';
+  markerElement.innerText = "I'm marker!";
+
+  const marker = new YMapMarker(
+    {
+        source: '70.png',
+        coordinates: [36.588144, 54.733842],
+        draggable: true,
+        mapFollowsOnDrag: true
+    },
+    markerElement);
+
+
+
+
             
-  const el = document.createElement('img');
-  el.className = 'my-marker';
-  el.src = '70.png';
-  el.onclick = () => map.update({location: {...LOCATION, duration: 200}});
-  map.addChild(new YMapMarker({coordinates: LOCATION.center}, el));
-  map.setBehaviors(['drag','pinchZoom']);
+    const el = document.createElement('img');
+    el.className = 'my-marker';
+    el.src = '70.png';
+    el.onclick = () => map.update({location: {...LOCATION, duration: 200}});
+    map.addChild(new YMapMarker({coordinates: LOCATION.center}, el));
+    //map.setBehaviors(['drag','pinchZoom']);
+
+
+    const el1 = document.createElement('img');
+    el1.className = 'my-marker1';
+    el1.src = '70.png';
+    el1.onclick = () => map.update({location: {...LOCATION1, duration: 200}});
+    map.addChild(new YMapMarker({coordinates: LOCATION1.center}, el1));
+   // map.setBehaviors(['drag','pinchZoom']);
+
+
+   const el2 = document.createElement('img');
+   el2.className = 'my-marker1';
+   el2.src = '70.png';
+   el2.onclick = () => map.update({location: {...LOCATION2, duration: 200}});
+   map.addChild(new YMapMarker({coordinates: LOCATION2.center}, el2));
+  // map.setBehaviors(['drag','pinchZoom']);
+
+
+  const el3 = document.createElement('img');
+  el3.className = 'my-marker1';
+  el3.src = '70.png';
+  el3.onclick = () => map.update({location: {...LOCATION3, duration: 200}});
+  map.addChild(new YMapMarker({coordinates: LOCATION3.center}, el3));
+ // map.setBehaviors(['drag','pinchZoom']);
+
+ const el4 = document.createElement('img');
+ el4.className = 'my-marker1';
+ el4.src = '70.png';
+ el4.onclick = () => map.update({location: {...LOCATION4, duration: 200}});
+ map.addChild(new YMapMarker({coordinates: LOCATION4.center}, el4));
+
+
 
 
   map.addChild(new YMapDefaultSchemeLayer({
@@ -31,3 +95,36 @@ async function main() {
 
 }
 
+
+  /*const markerElement = document.createElement('div');
+  markerElement.className = 'marker-class';
+  markerElement.innerText = "I'm marker!";
+
+  const marker = new YMapMarker(
+    {
+        source: '70.png',
+        coordinates: [37.588144, 55.733842],
+        draggable: true,
+        mapFollowsOnDrag: true
+    },
+    markerElement
+    );*/
+
+
+      // map.addChild(new YMapControls({position: 'right'}).addChild(new YMapZoomControl({})));
+
+
+
+  /*const markerElement = document.createElement('div');
+  markerElement.className = 'marker-class';
+  markerElement.innerText = "I'm marker!";
+
+  const marker = new YMapMarker(
+    {
+        source: '70.png',
+        coordinates: [37.588144, 55.733842],
+        draggable: true,
+        mapFollowsOnDrag: true
+    },
+    markerElement
+    );*/
