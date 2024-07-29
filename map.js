@@ -56,7 +56,7 @@ async function main() {
             
     const el = document.createElement('img');
     el.className = 'my-marker';
-    el.src = '71.png';
+    el.src = '711.png';
     el.onclick = () => map.update({location: {...LOCATION, duration: 200}});
     map.addChild(new YMapMarker({coordinates: LOCATION.center}, el));
     //map.setBehaviors(['drag','pinchZoom']);
@@ -80,7 +80,7 @@ async function main() {
 
   const el3 = document.createElement('img');
   el3.className = 'my-marker';
-  el3.src = '73.png';
+  el3.src = '733.png';
   el3.onclick = () => map.update({location: {...LOCATION3, duration: 200}});
   map.addChild(new YMapMarker({coordinates: LOCATION3.center}, el3));
  // map.setBehaviors(['drag','pinchZoom']);
