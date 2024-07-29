@@ -183,7 +183,7 @@ async function main() {
 
  const el18 = document.createElement('img');
  el18.className = 'my-marker1';
- el18.src = '75.png';
+ el18.src = '77.png';
  el18.onclick = () => map.update({location: {...LOCATION18, duration: 200}});
  map.addChild(new YMapMarker({coordinates: LOCATION18.center}, el18));
 
