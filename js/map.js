@@ -1,4 +1,5 @@
 const LOCATION = {center: [37.623082, 55.752540], zoom: 16};
+//центр города
 const LOCATION1 = {center: [37.588144, 55.733842], zoom: 16};
 const LOCATION2 = {center: [37.627377, 55.757288], zoom: 16};
 const LOCATION3 = {center: [37.618381, 55.752140], zoom: 16};
