@@ -3,6 +3,35 @@
     <!--<script src="yandex.js"></script>-->
             <script src="js/map.js"></script>
             <link href="css/map.css" rel="stylesheet" type="text/css"/>
+
+<!-- Chatra {literal} -->
+<script>
+  window.ChatraSetup = {
+    mode: 'frame',
+    injectTo: 'chatra-wrapper',
+    colors: {
+        buttonText: 'green', /* chat button text/icon color */
+        buttonBg: 'green', /* chat button background color */
+        clientBubbleBg: 'green', /* visitor’s message bubble color */
+        agentBubbleBg: 'green' /* agent’s message bubble color */
+    } 
+};
+  (function(d, w, c) {
+      w.ChatraID = 'gMWmHHHshj6syB2Sv';
+      var s = d.createElement('script');
+      w[c] = w[c] || function() {
+          (w[c].q = w[c].q || []).push(arguments);
+      };
+      s.async = true;
+      s.src = 'https://call.chatra.io/chatra.js';
+      if (d.head) d.head.appendChild(s);
+  })(document, window, 'Chatra');
+  Chatra('setColors', {
+    chatBg: '#17212b' // фон
+});
+</script>
+<!-- /Chatra {/literal} -->
+
 </head>
 
 <body>
@@ -17,22 +46,11 @@
 <div id="map" style="height: 35vh;" style="display:none;"></div>
 
 
-<button class="collapsible">
-
- 
-
-  <img src="img/mes.png" class="rotateImg" style="width: 60px;margin-top: -20px;
-"> 
 
 
-</button>
-<div class="content">
-  <img src="img/ch1.png" style="
-    width: 100%;
-"> 
+  <div id="chatra-wrapper"  style="background:#17212b;border-radius:30px;height: 64vh;max-height: 680px;width:100%;"></div>
 
 
-</div>
 
 
 
