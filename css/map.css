@@ -108,3 +108,15 @@ content:'В работе'; font-size:4em;color:white;
     padding-left: 3px;
     padding-right: 3px;
     border-radius: 7px;}
+
+    .marker-class-top3  { 
+        background-color: white;
+        color: red;
+        font-weight: 900;
+        position: relative;
+        top: 45px;
+        font-size: 1em;
+        width: 100%;
+        padding-left: 3px;
+        padding-right: 3px;
+        border-radius: 7px;}
