@@ -1,3 +1,4 @@
+
 Таймеры выполнения задач
 
-![name](https://github.com/MasterOnlineBot/MasterOnlineBot.github.io/raw/main/img/v.mp4)
+![time](https://github.com/user-attachments/assets/01464c13-b034-4f43-ad19-bc12cfcb4cf3)
