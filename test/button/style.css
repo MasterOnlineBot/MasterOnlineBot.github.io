@@ -48,10 +48,10 @@
     font-weight: bold;
     border: none;
     cursor: pointer;
-    width: 45px;
+    width: 26px;
     border-radius: 7px;
     position: absolute;
-    top: 16.5vh;
+    top: 15.35vh;
     right: 11px;
     z-index: 1;
 }
