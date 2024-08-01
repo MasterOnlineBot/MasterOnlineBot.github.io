@@ -9,7 +9,7 @@
         width: 0;
 }</style>
   </head>
- <body style="text-align: center;font-family: 'Roboto', sans-serif;">
+<body style="text-align: center;font-family: 'Roboto', sans-serif;">
   <section class="section">
     <div class="container">
 <div class="columns" style="display: flex;">
@@ -18,21 +18,26 @@
   <div class="column"> </div>
   <div class="column"> </div>
 </div>
-<div class="columns" style="display: flex;font-size: 2em;">
-  <div class="column is-half " style="display: grid;"><span style="color:green;">выполнено</span>
+<div class="columns" style="display: flex;font-size: 2em;border-bottom: 3px solid white;">
+  <div class="column is-half " style="display: grid;/* border-left: 1.5px solid white; */"><span style="color:green;/* border-right: 1.5px solid white; */">выполнено</span>
   <span style="
-    font-size: 3em;font-weight:900
+    font-size: 3em;
+    font-weight:900;
+    border-right: 1.5px solid white;
 ">25</span>
     </div>
   <div class="column is-half" style="
     display: grid;
 "> <span style="color:orange;">в очереди</span>
 <span style="
-    font-size: 3em;font-weight:900
+    font-size: 3em;
+    font-weight:900;
+    border-left: 1.5px solid white;
+    /* padding-left: 0px; */
 ">32</span>
 </div>
 </div>
-<div class="columns" style="display: flex;font-size: 2em;">
+<div class="columns" style="display: flex;font-size: 2em;border-bottom: 3px solid white;">
 <div class="column" style="display: grid;">
   <div class="column"><span style="color:orange;"><span style="color:white;">{</span> среднее от <span style="color:green;">выполнения заявки</span> <span style="color:white;">}</span> </span> </div>
 <!--<span style="font-size: 2em;">{ дорога }</span>
@@ -49,6 +54,8 @@
     </div>
   </section>
   
+
+
 
 </body>
 </html>
