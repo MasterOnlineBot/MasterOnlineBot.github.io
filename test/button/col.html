@@ -21,7 +21,7 @@ body{background-color: #17212b};
 </div>
 <div class="columns" style="display: flex;font-size: 2em;border-bottom: 3px solid white;">
   <div class="column is-half " style="display: grid;/* border-left: 1.5px solid white; */"><span style="color:green;/* border-right: 1.5px solid white; */">выполнено</span>
-  <span style="
+  <span id="complete" style="
     font-size: 3em;
     font-weight:900;
     border-right: 1.5px solid white;
@@ -30,7 +30,7 @@ body{background-color: #17212b};
   <div class="column is-half" style="
     display: grid;
 "> <span style="color:orange;">в очереди</span>
-<span style="
+<span id="all" style="
     font-size: 3em;
     font-weight:900;
     border-left: 1.5px solid white;
@@ -46,7 +46,7 @@ body{background-color: #17212b};
 <span style="font-size: 2em;">{ заявка }</span style="font-weight:900">
 <span style="font-weight:900;">минут</span>-->
 
-  <span style="
+  <span  id="result" style="
     font-size: 3em;font-weight:900
 ">4</span>
 <span style="color:white;">17
@@ -57,7 +57,7 @@ body{background-color: #17212b};
   </section>
   
 
-
+  <script src="col.js"></script>
 
 </body>
 </html>
