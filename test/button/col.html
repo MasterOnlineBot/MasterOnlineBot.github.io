@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>col</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>col</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
 <style> ::-webkit-scrollbar {
-        width: 0;
+      width: 0;
 body{background-color: #17212b};
 }</style>
-  </head>
+</head>
 <body style="text-align: center;font-family: 'Roboto', sans-serif;">
   <section class="section">
     <div class="container">
@@ -30,9 +28,11 @@ body{background-color: #17212b};
 
 <div style="color:#6c6c6c;">         
 <img src="mark3.png" style="
-    width: 25px;
+    width: 22px;
 ">
-  <span  class="display-time-b" > </span> 
+  <span class="display-time-b" style="
+  font-size: .75em;
+">?</span> 
 
 </div> 
 
@@ -40,7 +40,7 @@ body{background-color: #17212b};
     </div>
   <div class="column is-half" style="
     display: grid;
-"> <span style="color:orange;">в очереди</span>
+"> <span style="color:orange;">очередь</span>
 <span id="all" style="
     font-size: 3em;
     font-weight:900;
@@ -52,9 +52,11 @@ body{background-color: #17212b};
     color: #6c6c6c;
 ">
 <img src="mark3.png" style="
-width: 25px;
+width: 22px;
 ">
-  <span  class="display-time-a" ></span>
+  <span class="display-time-a" style="
+  font-size: .75em;
+">?</span>
 </div> 
 
 </div>
@@ -62,32 +64,110 @@ width: 25px;
 <div class="columns" style="display: flex;font-size: 2em;border-bottom: 3px solid white;">
 <div class="column" style="display: grid;">
   <div class="column"><span style="color:orange;"><span style="color:white;">{</span> средняя <span style="color:green;"> заявка</span> <span style="color:white;">}</span> </span> </div>
-<!--<span style="font-size: 2em;">{ дорога }</span>
-%
-<span style="font-size: 2em;">{ заявка }</span style="font-weight:900">
-<span style="font-weight:900;">минут</span>-->
 
-  <span  id="result" style="
+
+  <span id="result" style="
     font-size: 3em;font-weight:900
 ">?</span>
 
-<div  style="
+<div style="
     color: #6c6c6c;
 ">
 <img src="mark3.png" style="
-width: 25px;
+width: 22px;
 ">
-  <span class="display-time"> </span>
+
+
+  <span id="day">?</span>,
+  <span id="daynum">?</span>
+  <span id="month">?</span>
+  <span id="year">?</span>
+  <span class="display-time" style="
+  font-size: .75em;
+">?</span>
 </div> 
 </div>
 </div>
 
-    </div>
-  </section>
+
+
+
+
+<div class="column" style="display: grid;">
+    <span style="color:#6c6c6c;font-size: 2em;">
+    <span style="color:white;">{</span> процесс <span style="color:green;"> </span> <span style="color:white;">}</span>
+  </span>
+  </div>
+
+  <div style="
+    border-bottom: 3px solid #6c6c6c;
+">
+<span style="font-size: 3em;position: relative;top: -15px;
+">  1 </span>
+<img src="img/70.png" style="/*width: 25px;*/"> 
+<span style="font-size: 4em;font-weight: 900;position: relative;top: -15px;
+">  &gt; </span>
+<img src="img/1.png" style="width: 65px;"> 
+
+
+</div>
+  <div style="
+    border-bottom: 3px solid #6c6c6c;
+">
+<span style="font-size: 3em;position: relative;top: -15px;
+">  2 </span>
+<img src="img/70.png" style="/*width: 25px;*/"> 
+<span style="font-size: 4em;font-weight: 900;position: relative;top: -15px;
+">  &gt; </span>
+<img src="img/4.png" style="width: 65px;"> 
+
+
+</div><div style="
+    border-bottom: 3px solid #6c6c6c;
+">
+<span style="font-size: 3em;position: relative;top: -15px;
+">  3 </span>
+<img src="img/70.png" style="/*width: 25px;*/"> 
+<span style="font-size: 4em;font-weight: 900;position: relative;top: -15px;
+">  &gt; </span>
+<img src="img/2.png" style="width: 65px;"> 
+
+
+</div><div style="
+    border-bottom: 3px solid #6c6c6c;
+">
+<span style="font-size: 3em;position: relative;top: -15px;
+">  4 </span>
+<img src="img/70.png" style="/*width: 25px;*/"> 
+<span style="font-size: 4em;font-weight: 900;position: relative;top: -15px;
+">  &gt; </span>
+<img src="img/5.png" style="width: 65px;"> 
+
+
+</div><span class="display-time"> </span>
+</div>
+
   
+<div class="column" style="display: grid;">
+
+  </div>
+
+  
+  <span class="display-time"> </span>
+
+    
+
+    
+        <span class="display-time"> </span>
+      
+          
+
+          
+              <span class="display-time"> </span>
+            
+  </section>
 
   <script src="col.js"></script>
-
   <script src="time.js"></script>
 
 </body>
