@@ -8,3 +8,5 @@
 ![9bcb41104029557 5f59f3e4e95a4](https://github.com/user-attachments/assets/1ba54293-9d3b-4ac5-a13d-a603023e0390)
 
 https://t.me/ProstoMasterTelegram_bot/site
+
+https://t.me/ProstoMasterTelegram_bot/MasterChat
