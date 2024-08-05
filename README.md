@@ -1,6 +1,12 @@
 Сбор задач, мониторинг состояния / выполнения. Таймеры и статистика выполнения задач.
 
 ![time](https://github.com/user-attachments/assets/01464c13-b034-4f43-ad19-bc12cfcb4cf3)
+
+![2](https://github.com/user-attachments/assets/e65e14a4-2ef0-48cf-8584-055967d2cedb)
+
+![8](https://github.com/user-attachments/assets/1292f0ea-4dfc-4806-b784-ec7665ae41e8)
+
+
 ![2024](https://github.com/user-attachments/assets/f3c20f6b-a390-4b98-89f6-ff471a1d3990)
 
 ![screen3b](https://github.com/user-attachments/assets/ed811a90-b7ae-4bc6-9c44-b254aecd1596)
